@@ -1,0 +1,17 @@
+.fav-btn {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    text-align: end;
+    cursor: pointer;
+    
+
+}
+
+.fav-btn:hover {
+    color: var(--clr-main-blue)
+}
+
+.fav-btn .fa-solid {
+    color: var(--clr-main-blue)
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="./images/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/44ff6c67ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>G2 News</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <a href="/G2news/"><img src="images/logo.jpg" alt="G2 Logo" id="header-logo" /></a>
+        <h1 class="title">NEWS</h1>
+        <button type="button" class="hamburger">
+          <i class="fa-solid fa-bars" id="menu-btn"></i>
+          <i class="fa-solid fa-xmark" id="close-btn"></i>
+        </button>
+      </header>
+
+      
+
+      <main class="main">
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-btn">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-btn">Top News</a></li>
+            <li class="nav-item"><a href="./favourites.html" class="nav-btn">My News</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-btn">Categories <i class="fa-solid fa-chevron-down"></i> </a>
+              <ul class="dropdown-content">
+                <li class="content-category"><a href="#">Business</a></li>
+                <li class="content-category"><a href="#">Entertainment</a></li>
+                <li class="content-category"><a href="#">Health</a></li>
+                <li class="content-category"><a href="#">Science</a></li>
+                <li class="content-category"><a href="#">Sports </a></li>
+                <li class="content-category"><a href="#">Technology</a></li>
+                <!-- Add more categories as needed -->
+              </ul>
+            </li>
+          </ul>
+          </ul>
+        </nav>
+
+        <form class="searchbar">
+          <input
+            type="text"
+            placeholder="Search..."
+            name="search-input"
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        
+        <div class="content-container">
+        <div class="news-card-container">
+          <!-- Contains elements from each news element imported from api. -->
+        </div>
+
+        <aside class="aside-news">
+         
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>
